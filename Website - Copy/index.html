@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teejs Website</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <video playsinline autoplay muted loop id="bgvid">
+        <source src="dexvid.mp4" type="video/mp4">
+    </video>
+    
+    <!-- Header Section -->
+    <div class="header-section">
+        <span class="website-name">Tommy Halls Personal Website</span>
+        <div class="button-container">
+            <!-- Hamburger Menu -->
+            <div id="menu-toggle" class="menu-icon">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+
+            <div class="top-buttons">
+                <a href="bio.html"><button>Bio</button></a>
+                <a href="projectList.html"><button>Projects</button></a>
+                <!-- You can add more buttons if required -->
+                <div class="social-links">
+                    <a href="snapcode.png">Snapchat</a>
+                    <a href="https://twitter.com/Tj_Hall04">X</a>
+                    <a href="https://www.instagram.com/tj_hall04/">Instagram</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const buttonContainer = document.querySelector('.button-container');
+
+        menuToggle.addEventListener('click', function() {
+            buttonContainer.classList.toggle('active-menu');
+        });
+    </script>
+</body>
+</html>

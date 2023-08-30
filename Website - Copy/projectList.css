@@ -1,0 +1,67 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+video {
+    max-width: 90%;  /* This makes sure the video doesn't go beyond the screen width */
+    margin: 10px 10px;   /* Adds space between videos */
+}
+#projectListVid2 {
+    height: 72%;
+    width: 90%;
+    margin-right: 5%;
+    margin-bottom: 0;
+}
+
+footer {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.backbuttoncontainer button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: rgba(207, 1, 1, 0.6);
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.backbuttoncontainer button:hover {
+    background-color: black;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 767px) {
+    body {
+        flex-direction: column;
+        justify-content: space-between;
+        padding-bottom: 20px; /* Added some padding to account for the button */
+    }
+
+    video {
+        width: 90%;  /* Resize the video for mobile */
+    }
+
+    .backbuttoncontainer button {
+        width: 80%;  /* Making the button wider on mobile */
+        margin-top: 10px;  /* Adds space between the videos and the button on mobile */
+    }
+    footer {
+        position: relative;
+    }
+}
