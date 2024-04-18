@@ -42,7 +42,7 @@ body, html {
     background-color: rgba(0, 0, 0, 0.9);
     padding: 30px 30px;
     border-radius: 10px 20px;
-    font-size: x-large;
+    font-size:larger;
     text-align: center;
     color: #fff;
     margin-bottom: 30px; /* Give some space at the bottom for the back button */
@@ -75,7 +75,8 @@ body, html {
     opacity: 0;
     width: 25%;
     margin-left: 35%;
-    margin-top: 1.5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
     background-color: rgba(199, 28, 28, 0.8);
     padding: .5rem .5rem;
     border-radius: .5rem;
