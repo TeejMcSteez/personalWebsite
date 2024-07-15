@@ -5,6 +5,15 @@ body, html {
     font-family: Futura Std Condensed Light; /* Adding a clean, modern font */
 }
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 /* Centering content vertically and horizontally */
 .content {
     display: flex;
@@ -13,6 +22,7 @@ body, html {
     justify-content: center; /* Center vertically */
     height: 100dvh;
     color: #000; /* Light text color for contrast */
+    animation: fadeIn 1s ease;
 }
 
 .button-section {
@@ -40,4 +50,3 @@ body, html {
     background-color: red; /* Darker shade on hover */
     transform: translateY(-4px); /* Slight upward move on hover */
 }
-

@@ -35,7 +35,7 @@ body, html {
     margin-left:4%;
     width: 90%;  /* Default width for mobile */
     opacity: 0;  /* Start with invisible content */
-    animation: fadeIn 2s forwards .5s;  /* Apply our fade-in animation */
+    animation: fadeIn 1s forwards .5s;  /* Apply our fade-in animation */
 }
 
 .bioBody {
